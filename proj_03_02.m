@@ -1,12 +1,12 @@
-% 读取图片
+% read in picture
 img = imread('./Images/Fig3.08(a).jpg');
-% 绘制图片
+% draw picture
 subplot(2,2,1);
 imshow(img);
-% 绘制直方图
+% draw hist
 subplot(2,2,2);
 imhist(img);
-% 直方图均衡化
+% hist
 img1 = histeq(img,256);
 subplot(2,2,3);
 imshow(img1);
